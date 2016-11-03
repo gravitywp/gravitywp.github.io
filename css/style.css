@@ -633,7 +633,6 @@ code {
   line-height: 1.5em;
 }
 .profile-block {
-  padding: 15px 20px;
   border-bottom: 1px solid #eceff2;
 }
 .profile-block:last-child {
@@ -658,8 +657,7 @@ code {
 #profile .inner .base-info #avatar {
   display: block;
   margin: 10px auto 20px;
-  width: 128px;
-  height: 128px;
+  height: 297px;
 }
 #profile .inner .base-info #name,
 #profile .inner .base-info #title,
