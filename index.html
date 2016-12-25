@@ -164,11 +164,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                2
+                3
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                4
+                6
                 <span>tags</span>
             </div>
         </div>
@@ -217,6 +217,151 @@ ga('send', 'pageview');
 
             
             <section id="main">
+    <article id="post-computer-network" class="article article-type-post" itemscope itemprop="blogPost">
+    <div class="article-inner">
+        
+        
+            <header class="article-header">
+                
+    
+        <h1 itemprop="name">
+            <a class="article-title" href="/2016/12/25/computer-network/">Computer Network</a>
+        </h1>
+    
+
+                
+                    <div class="article-meta">
+                        
+    <div class="article-date">
+        <i class="fa fa-calendar"></i>
+        <a href="/2016/12/25/computer-network/">
+            <time datetime="2016-12-24T17:36:00.000Z" itemprop="datePublished">2016-12-25</time>
+        </a>
+    </div>
+
+
+                        
+    <div class="article-category">
+    	<i class="fa fa-folder"></i>
+        <a class="article-category-link" href="/categories/Network/">Network</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Network/Network-Protocols/">Network Protocols</a>
+    </div>
+
+                        
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/Computer-Network/">Computer Network</a>, <a class="tag-link" href="/tags/Network-Protocol/">Network Protocol</a>
+    </div>
+
+                    </div>
+                
+            </header>
+        
+        
+        <div class="article-entry" itemprop="articleBody">
+        
+            <p><h2 class="section-number-2" >Data link layer</h2><p></p><h3 class="section-number-3" >Basic fetures</h3><p><ol>
+     <li>Framming</li>
+	使用特殊的不可打印的ASCII字符SOH(Start of Header)(Ox01)和EOT(End Of Transmission)(Ox04)来表示帧的开始和结束。
+</ol>
+<ol>
+     <li>Transparent transport</li>
+	为保证数据的透明传输,会在数据中的控制字符"SOH"和"EOT"前插入"ESC"(Ox1B)作为转义字符，当数据中出现"ESC"会在前面插入"ESC"转义。
+</ol>
+<ol>
+     <li>Error detection</li>
+	检查比特差错(Bit Error)[fn:1],提高信噪比可以减少误码率BER(Bit Error Rate)[fn:2]。目前数据链路层广泛使用循环冗
+</ol>
+        余检验<a href="https:<i>/en.wikipedia.org</i>wiki/Cyclic<span style="text-decoration:underline">redundancy</span>check">CRC(Cyclic Redundancy Check)</a>.丢弃有错误的帧。</p>
+            <p class="article-more-link">
+                <a href="/2016/12/25/computer-network/#more">Read More</a>
+            </p>
+        
+        </div>
+        <footer class="article-footer">
+            <div class="share-container">
+
+
+
+</div>
+
+    <a data-url="http://binarylab.cn/2016/12/25/computer-network/" data-id="cix4a5fqf0001flm1098gezy2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+<script>
+    (function ($) {
+        // Prevent duplicate binding
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+</script>
+
+            
+    
+        <a href="http://binarylab.cn/2016/12/25/computer-network/#comments" class="article-comment-link ds-thread-count" data-thread-key="http://binarylab.cn/2016/12/25/computer-network/">Comments</a>
+    
+
+        </footer>
+    </div>
+    
+</article>
+
+
+
     <article id="post-Perfection-vs-Excellence" class="article article-type-post" itemscope itemprop="blogPost">
     <div class="article-inner">
         
@@ -282,7 +427,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://binarylab.cn/2016/11/05/Perfection-vs-Excellence/" data-id="cix3f9eld0002y1m1fabb0sli" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://binarylab.cn/2016/11/05/Perfection-vs-Excellence/" data-id="cix4a5fql0003flm1hy7zcpp4" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -426,7 +571,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://binarylab.cn/2016/10/31/hello/" data-id="cix3f9el50000y1m1n0oqp5if" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://binarylab.cn/2016/10/31/hello/" data-id="cix4a5fqs0005flm1f7qwd8kx" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -516,6 +661,25 @@ ga('send', 'pageview');
                     <li>
                         
                         <div class="item-thumbnail">
+                            <a href="/2016/12/25/computer-network/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
+                            <p class="item-category"><a class="article-category-link" href="/categories/Network/">Network</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Network/Network-Protocols/">Network Protocols</a></p>
+                            <p class="item-title"><a href="/2016/12/25/computer-network/" class="title">Computer Network</a></p>
+                            <p class="item-date"><time datetime="2016-12-24T17:36:00.000Z" itemprop="datePublished">2016-12-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
                             <a href="/2016/11/05/Perfection-vs-Excellence/" class="thumbnail">
     
     
@@ -560,7 +724,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">categories</h3>
         <div class="widget">
-            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Psychology/">Psychology</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Psychology/Life/">Life</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/orgmode/">orgmode</a><span class="category-list-count">1</span></li></ul>
+            <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Network/">Network</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Network/Network-Protocols/">Network Protocols</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/Psychology/">Psychology</a><span class="category-list-count">1</span><ul class="category-list-child"><li class="category-list-item"><a class="category-list-link" href="/categories/Psychology/Life/">Life</a><span class="category-list-count">1</span></li></ul></li><li class="category-list-item"><a class="category-list-link" href="/categories/orgmode/">orgmode</a><span class="category-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -569,7 +733,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -578,7 +742,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Life/">Life</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Positive-Psychology/">Positive Psychology</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/">http</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testpost/">testpost</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Network/">Computer Network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Life/">Life</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network-Protocol/">Network Protocol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Positive-Psychology/">Positive Psychology</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/">http</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testpost/">testpost</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -587,7 +751,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Positive-Psychology/" style="font-size: 10px;">Positive Psychology</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/testpost/" style="font-size: 10px;">testpost</a>
+            <a href="/tags/Computer-Network/" style="font-size: 10px;">Computer Network</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Network-Protocol/" style="font-size: 10px;">Network Protocol</a> <a href="/tags/Positive-Psychology/" style="font-size: 10px;">Positive Psychology</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/testpost/" style="font-size: 10px;">testpost</a>
         </div>
     </div>
 
