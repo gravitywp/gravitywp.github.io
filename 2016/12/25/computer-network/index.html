@@ -23,7 +23,7 @@
 
      Transparent transport
 	为保证数据的透明传输,会在数据中的控制字符&quot;SOH&quot;和&quot;EOT&quot;前插入&quot;ESC&quot;">
-<meta property="og:updated_time" content="2016-12-25T06:38:18.722Z">
+<meta property="og:updated_time" content="2016-12-25T07:50:40.188Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Computer Network">
 <meta name="twitter:description" content="Data link layerBasic fetures
@@ -186,11 +186,11 @@ ga('send', 'pageview');
         </div>
         <div class="article-info profile-block">
             <div class="article-info-block">
-                3
+                4
                 <span>posts</span>
             </div>
             <div class="article-info-block">
-                6
+                7
                 <span>tags</span>
             </div>
         </div>
@@ -270,7 +270,7 @@ ga('send', 'pageview');
                         
     <div class="article-tag">
         <i class="fa fa-tag"></i>
-        <a class="tag-link" href="/tags/Computer-Network/">Computer Network</a>, <a class="tag-link" href="/tags/Network-Protocol/">Network Protocol</a>
+        <a class="tag-link" href="/tags/Computer-Network/">Computer Network</a>, <a class="tag-link" href="/tags/Network-Protocol/">Network Protocol</a>, <a class="tag-link" href="/tags/Notes/">Notes</a>
     </div>
 
                     </div>
@@ -302,25 +302,28 @@ ga('send', 'pageview');
     - PPP(Point-to-Point-Protocol)
       - Fetures
 <ol>
-	 <li>Simple</li>
-	 <li>Framming</li>
-	 <li>Transparent</li>
-	 <li>在同一链路上同时支持多种网络层协议(如IP和IPX等)的运行。</li>
-	 <li>支持多种类型链路，PPPoE(PPP over Ethernet)</li>
-	 <li>差错检测(error detection)，接受端进行差错检测，丢弃有差错的帧。</li>
-	 <li>检测链接状态</li>
-	 <li>最大传输单元(MTU)，是数据链路层的帧载荷部分的最大长度。MTU默认值为1500 bytes。</li>
-	 <li>数据压缩协商,可以协商数据压缩算法，</li>
-     - 协议的组成
+	<li>Simple</li>
+	<li>Framming</li>
+	<li>Transparent</li>
+	<li>在同一链路上同时支持多种网络层协议(如IP和IPX等)的运行。</li>
+	<li>支持多种类型链路，PPPoE(PPP over Ethernet)</li>
+	<li>差错检测(error detection)，接受端进行差错检测，丢弃有差错的帧。</li>
+	<li>检测链接状态</li>
+	<li>最大传输单元(MTU)，是数据链路层的帧载荷部分的最大长度。MTU默认值为1500 bytes。</li>
+	<li>网络曾地址协商,PPP协议必须通过协商可以知道两个通信的网络层的网络层地址，因为仅在链路层建立的连接而不知道对方的网络层地址还不能够保证网络层能够传输分组。</li>
+	<li>数据压缩协商,可以协商数据压缩算法，</li>
+    - 协议的组成
 </ol>
 <ol>
-	 <li>将IP数据包封装到串行链路的方法。</li>
-	 <li>一个用来建立和测试链路连接的链路控制协议LCP(Link Control Protocol)。</li>
-	 <li>一套网络控制协议NCP(Network Control Procotol),其中的每一个协议支持不同的网络曾协议,如IP,OSI的网络</li>
-            层,DECnet,AppleTalk等。
+      <li>将IP数据包封装到串行链路的方法。</li>
+      <li>一个用来建立和测试链路连接的链路控制协议LCP(Link Control Protocol)。</li>
+      <li>一套网络控制协议NCP(Network Control Procotol),其中的每一个协议支持不同的网络曾协议,如IP,OSI的网络</li>
+         层,DECnet,AppleTalk等。
 </ol>
+    - PPP的帧格式
+      1. 
 	    
-	    
+Reading book notes. to be continue...	    
 [fn:1] 比特在传输过程中会产生差错,1可能变为0,而0也可能变为1,这就叫做比特差错。
 [fn:2] 误码率表示传输错误的比特占所传输比特总数的比率。BER = error bits / bits.</p><p></p>
         
@@ -332,7 +335,7 @@ ga('send', 'pageview');
 
 </div>
 
-    <a data-url="http://binarylab.cn/2016/12/25/computer-network/" data-id="cix4a5fqf0001flm1098gezy2" class="article-share-link"><i class="fa fa-share"></i>Share</a>
+    <a data-url="http://binarylab.cn/2016/12/25/computer-network/" data-id="cix4cwau70002hlm1m96dujnu" class="article-share-link"><i class="fa fa-share"></i>Share</a>
 <script>
     (function ($) {
         // Prevent duplicate binding
@@ -408,6 +411,15 @@ ga('send', 'pageview');
     
         
 <nav id="article-nav">
+    
+        <a href="/2016/12/25/computer-network/" id="article-nav-newer" class="article-nav-link-wrap">
+            <strong class="article-nav-caption">Newer</strong>
+            <div class="article-nav-title">
+                
+                    (no title)
+                
+            </div>
+        </a>
     
     
         <a href="/2016/11/05/Perfection-vs-Excellence/" id="article-nav-older" class="article-nav-link-wrap">
@@ -491,6 +503,25 @@ ga('send', 'pageview');
                         </div>
                         
                         <div class="item-inner">
+                            <p class="item-category"></p>
+                            <p class="item-title"><a href="/2016/12/25/computer-network/" class="title"></a></p>
+                            <p class="item-date"><time datetime="2016-12-25T06:39:51.044Z" itemprop="datePublished">2016-12-25</time></p>
+                        </div>
+                    </li>
+                
+                    <li>
+                        
+                        <div class="item-thumbnail">
+                            <a href="/2016/12/25/computer-network/" class="thumbnail">
+    
+    
+        <span class="thumbnail-image thumbnail-none"></span>
+    
+</a>
+
+                        </div>
+                        
+                        <div class="item-inner">
                             <p class="item-category"><a class="article-category-link" href="/categories/Network/">Network</a><i class="fa fa-angle-right"></i><a class="article-category-link" href="/categories/Network/Network-Protocols/">Network Protocols</a></p>
                             <p class="item-title"><a href="/2016/12/25/computer-network/" class="title">Computer Network</a></p>
                             <p class="item-date"><time datetime="2016-12-24T17:36:00.000Z" itemprop="datePublished">2016-12-25</time></p>
@@ -553,7 +584,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">archives</h3>
         <div class="widget">
-            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li></ul>
+            <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/10/">October 2016</a><span class="archive-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -562,7 +593,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tags</h3>
         <div class="widget">
-            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Network/">Computer Network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Life/">Life</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network-Protocol/">Network Protocol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Positive-Psychology/">Positive Psychology</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/">http</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testpost/">testpost</a><span class="tag-list-count">1</span></li></ul>
+            <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Computer-Network/">Computer Network</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Life/">Life</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Network-Protocol/">Network Protocol</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Notes/">Notes</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Positive-Psychology/">Positive Psychology</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/http/">http</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/testpost/">testpost</a><span class="tag-list-count">1</span></li></ul>
         </div>
     </div>
 
@@ -571,7 +602,7 @@ ga('send', 'pageview');
     <div class="widget-wrap">
         <h3 class="widget-title">tag cloud</h3>
         <div class="widget tagcloud">
-            <a href="/tags/Computer-Network/" style="font-size: 10px;">Computer Network</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Network-Protocol/" style="font-size: 10px;">Network Protocol</a> <a href="/tags/Positive-Psychology/" style="font-size: 10px;">Positive Psychology</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/testpost/" style="font-size: 10px;">testpost</a>
+            <a href="/tags/Computer-Network/" style="font-size: 10px;">Computer Network</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Network-Protocol/" style="font-size: 10px;">Network Protocol</a> <a href="/tags/Notes/" style="font-size: 10px;">Notes</a> <a href="/tags/Positive-Psychology/" style="font-size: 10px;">Positive Psychology</a> <a href="/tags/http/" style="font-size: 10px;">http</a> <a href="/tags/testpost/" style="font-size: 10px;">testpost</a>
         </div>
     </div>
 
